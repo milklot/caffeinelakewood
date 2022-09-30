@@ -7,6 +7,7 @@ export const HomeVideo = (props) => {
     <div className="home-video-container">
       <video className="home-video" muted loop autoPlay>
         <source src={videoFile} type="video/mp4" />
+        Your browser does not support the video tag
       </video>
     </div>
   );

@@ -15,7 +15,6 @@
 }
 
 .hero-img-container .content {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,4 +45,14 @@
   bottom: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* id for block the paralax picture without content */
+#hero-img-container {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/hero-image2.jpeg");
+  background-attachment: fixed;
 }
