@@ -1,12 +1,23 @@
 import React from "react";
 import "../styling/heroImgStyles.css";
 
-export const HeroImg = () => {
+export const HeroImg = (props) => {
+  const { noContext } = props;
   return (
-    <div className="hero-img-container" alt="main hall">
+    <div
+      className={
+        noContext ? "hero-img-container-no-context" : "hero-img-container"
+      }
+    >
       <div className="content">
-        <h1>Caffeine</h1>
-        <p>- Recharge yourself -</p>
+        {noContext ? (
+          <></>
+        ) : (
+          <>
+            <h1>Caffeine</h1>
+            <p>- Recharge yourself -</p>
+          </>
+        )}
       </div>
     </div>
   );

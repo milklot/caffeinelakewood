@@ -48,7 +48,7 @@
 }
 
 /* id for block the paralax picture without content */
-#hero-img-container {
+.hero-img-container-no-context {
   width: 100%;
   height: 500px;
   background-position: center;

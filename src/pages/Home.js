@@ -11,7 +11,7 @@ import img3 from "../images/home-info3.jpeg";
 import { homeData1 } from "../data/home-data.js";
 import { homeData2 } from "../data/home-data.js";
 import { homeData3 } from "../data/home-data.js";
-import { HeroImg2 } from "../components/HeroImg2";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -25,8 +25,9 @@ export const Home = () => {
         imgFile={img2}
         // style={{ flexDirection: "row-reverse" }}
       />
-      <HeroImg2 />
+      <HeroImg noContext={true} />
       <HomeInfo dataObj={homeData3} imgFile={img3} />
+      <Footer />
     </>
   );
 };

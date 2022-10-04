@@ -2,12 +2,14 @@ import React from "react";
 import "../styling/navBarStyles.css";
 import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
+import logoImg from "../images/logo-image.png";
 
 export const NavBar = () => {
   return (
     <div className="header">
       <Link to="/">
-        <h1 className="nav-logo">Caffeine Lakewood</h1>
+        {/* <h1 className="nav-logo">Caffeine Lakewood</h1> */}
+        <img src={logoImg} className="nav-logo" alt="logo" />
       </Link>
       <ul className="nav-menu">
         <li>
