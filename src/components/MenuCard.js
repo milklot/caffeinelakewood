@@ -1,18 +1,27 @@
 import React from "react";
 
-export const MenuCard = () => {
+export const MenuCard = (props) => {
+  const { itemsData } = props;
+  console.log(itemsData);
   return (
     <div className="menu-card-container">
-      <h2 className="menu-card-h2">Regular</h2>
-      <div>
-        <div className="menu-card-img">
-          <img alt="food/drink" />
-        </div>
-        <div className="menu-card-text">
-          <p className="menu-card-item">Drip coffee</p>
-          <p className="menu-card-item-description">Small</p>
-        </div>
-      </div>
+      {itemsData.map(({ category, items }, index) => {
+        return (
+          <div>
+            <h2 className="menu-card-category" key={index}>
+              {category}
+            </h2>
+            {items.map(({ name, info }, i) => {
+              return (
+                <div className="menu-card-text" key={i}>
+                  <p className="menu-card-name">{name}</p>
+                  <p className="menu-card-info">{info}</p>
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
     </div>
   );
 };
