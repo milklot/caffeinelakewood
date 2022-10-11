@@ -18,6 +18,10 @@ To run the app type this npm command:
 npm start
 ```
 
+## Deployed website
+
+[click here](https://caffeine-lakewood.netlify.app/)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
