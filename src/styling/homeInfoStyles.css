@@ -28,3 +28,22 @@
   font-weight: 100;
   padding-bottom: 15px;
 }
+
+.home-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1040px) {
+  .home-info-container {
+    width: 80%;
+  }
+
+  .home-info-img img {
+    display: none;
+  }
+}

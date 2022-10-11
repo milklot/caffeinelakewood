@@ -11,11 +11,14 @@ export const MenuCard = (props) => {
             <h2 className="menu-card-category" key={index}>
               {category}
             </h2>
-            {items.map(({ name, info }, i) => {
+            {items.map(({ name, info, srcPath }, i) => {
               return (
-                <div className="menu-card-text" key={i}>
-                  <p className="menu-card-name">{name}</p>
-                  <p className="menu-card-info">{info}</p>
+                <div className="menu-card" key={i}>
+                  <img className="menu-img" src={srcPath} alt="food/drink" />
+                  <div className="menu-card-text">
+                    <p className="menu-card-name">{name}</p>
+                    <p className="menu-card-info">{info}</p>
+                  </div>
                 </div>
               );
             })}

@@ -20,11 +20,7 @@ export const Home = () => {
       <HeroImg />
       <HomeInfo dataObj={homeData1} imgFile={img1} />
       <HomeVideo videoFile={homeVideo} />
-      <HomeInfo
-        dataObj={homeData2}
-        imgFile={img2}
-        // style={{ flexDirection: "row-reverse" }}
-      />
+      <HomeInfo dataObj={homeData2} imgFile={img2} rev={true} />
       <HeroImg noContext={true} />
       <HomeInfo dataObj={homeData3} imgFile={img3} />
       <Footer />

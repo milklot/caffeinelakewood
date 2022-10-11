@@ -1,5 +1,5 @@
 .menu-container {
-  background-color: gray;
+  background-color: #333333;
   width: 80%;
   margin: 0 auto;
 }
@@ -15,19 +15,53 @@
   margin: 10px 10px;
   border: none;
   font-size: 1.5rem;
+  background-color: #333333;
+  color: #ffff;
 }
 
 .menu-card-container {
-  padding-left: 25px;
+  padding: 0 25px;
 }
 
 .menu-card-category {
   font-size: 2rem;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 3px solid #ffff;
+  border-top: 3px solid #ffff;
+  padding: 8px 0;
+  font-weight: 200;
 }
 
 .menu-card-name,
 .menu-card-info {
   padding-bottom: 10px;
+}
+
+/* .menu-img-container {
+  width: 124px;
+  height: 124px;
+} */
+
+.menu-img {
+  width: 124px;
+  height: 124px;
+  object-fit: cover;
+}
+
+.menu-card {
+  display: flex;
+  width: 80%;
+  padding-top: 40px;
+}
+
+.menu-card-text {
+  padding-left: 20px;
+  padding-bottom: 150px;
+  font: normal normal normal 18px/1.5em avenir-lt-w01_35-light1475496,
+    avenir-lt-w05_35-light, sans-serif;
+}
+
+@media screen and (max-width: 1040px) {
+  .menu-card {
+    height: 200px;
+  }
 }

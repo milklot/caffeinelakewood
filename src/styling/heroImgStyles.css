@@ -56,3 +56,13 @@
   background-image: url("../images/hero-image2.jpeg");
   background-attachment: fixed;
 }
+
+@media screen and (max-width: 1040px) {
+  .hero-img-container {
+    height: 400px;
+  }
+
+  .hero-img-container-no-context {
+    height: 400px;
+  }
+}

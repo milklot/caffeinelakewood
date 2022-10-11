@@ -2,10 +2,10 @@ import React from "react";
 import "../styling/homeInfoStyles.css";
 
 export const HomeInfo = (props) => {
-  const { dataObj, imgFile } = props;
+  const { dataObj, imgFile, rev } = props;
 
   return (
-    <div className="home-info-container">
+    <div className={rev ? "home-info-container rev" : "home-info-container"}>
       <div className="home-info-img">
         <img src={imgFile} alt="food or coffee" className="home-img" />
       </div>
