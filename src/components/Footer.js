@@ -1,7 +1,6 @@
 import React from "react";
 import "../styling/footerStyles.css";
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
