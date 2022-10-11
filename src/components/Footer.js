@@ -25,9 +25,9 @@ export const Footer = () => {
           Disclaimer : this website does not represent official Caffeine
           Lakewood / prices may be vary depends on the owner.{" "}
         </p>
-        <Link to="/">
+        <a href="https://github.com/milklot/caffeinelakewood">
           <FaGithub size={30} />
-        </Link>
+        </a>
       </div>
     </div>
   );

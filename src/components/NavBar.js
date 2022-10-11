@@ -36,7 +36,9 @@ export const NavBar = () => {
         </li>
       </ul>
       <div>
-        <FaInstagram size={30} style={{ color: "#fff" }} />
+        <a href="https://www.instagram.com/caffeine_lakewood/?hl=en">
+          <FaInstagram size={30} style={{ color: "#fff" }} />
+        </a>
       </div>
       <div className="hamburger" onClick={menuClick}>
         {isOpen ? (
