@@ -65,4 +65,8 @@
   .hero-img-container-no-context {
     height: 400px;
   }
+
+  .hero-img-container .content h1 {
+    font-size: 5rem;
+  }
 }
