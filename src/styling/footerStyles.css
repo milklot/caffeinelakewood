@@ -46,4 +46,8 @@
   .footer-container p {
     padding: 0 30px;
   }
+
+  .footer-contact .footer-contact-info {
+    font-size: 0.85rem;
+  }
 }

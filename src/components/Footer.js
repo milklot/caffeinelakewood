@@ -7,9 +7,11 @@ export const Footer = () => {
     <div className="footer-container">
       <div className="footer-contact">
         <h2>Contact us</h2>
-        <p className="footer-contact-info">
-          customer.caffeine@gmail.com / TEL: 440-857-0320
-        </p>
+        <div>
+          <p className="footer-contact-info">
+            customer.caffeine@gmail.com / TEL: 440-857-0320
+          </p>
+        </div>
       </div>
       <div className="footer-location-hours">
         <p>LOCATION & HOURS</p>
